@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #faecda;
+  margin: 0;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
+  background-color: bisque; }
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  background-color: blueviolet;
+  width: 100%;
+  height: 100%; }
+  .menu li {
+    align-items: center;
+    justify-content: space-around; }
+  .menu a {
+    color: #f7a4de;
+    padding: 20px; }
+  .menu:hover {
+    color: white; }
+
+.header__logo {
+  width: 100px;
+  height: 100px; }
+
+.sectionbody {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, auto); }
+
+.imgdiv img {
+  width: 100%; }
+
+.imgdiv {
+  grid-row: 1/3;
+  grid-column: 4/9;
+  width: 600px;
+  height: 300px; }
+
+.id3 {
+  grid-row: 1/5;
+  grid-column: 1/4;
+  color: blueviolet;
+  font-style: italic;
+  font-size: 30px; }
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, auto);
+  width: 100%;
+  position: relative;
+  bottom: 0px; }
+
+.imgfooter img {
+  width: 100%; }
+
+.imgfooter a {
+  grid-column: 1/ 2; }
+
+.full {
+  position: fixed;
+  width: 100%;
+  bottom: 0px; }
+
+.divpie {
+  font-size: 30px;
+  grid-column: 2/ 3; }
+
+p {
+  background-color: #ff90ff;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: 5px;
+  padding: 5px; }
+
+.galeria img {
+  width: 100%;
+  height: 250px; }
+  .galeria img .col-lg-4 {
+    margin: 0 !important;
+    padding: 25px; }
+  .galeria img:hover {
+    border: 10px solid blueviolet; }
+
+.sectionnos {
+  border-top: solid 5px blueviolet;
+  border-right: solid 10px blueviolet;
+  border-bottom: solid 7px blueviolet;
+  border-left: solid 12px blueviolet;
+  padding: 5px;
+  margin: 5px; }
+  .sectionnos .sectionnosjan {
+    padding: 5px;
+    color: blueviolet; }
+
+@media screen and (min-width: 320px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #faecda;
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    overflow-x: hidden; }
+  a {
+    text-decoration: none; }
+  .menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/ 12; }
+  .menu li {
+    align-items: center;
+    justify-content: space-around; }
+  .menu li a {
+    color: #f7a4de;
+    padding: 20px; }
+  .menu li a:hover {
+    color: white; }
+  .sectionbody {
+    display: grid;
+    grid-template-columns: repeat(12, 0.5fr);
+    grid-template-rows: repeat(4, auto); }
+  .imgdiv img {
+    width: 300px;
+    grid-row: 1/4;
+    grid-column: 8/12; }
+  .id3 {
+    grid-row: 1/5;
+    grid-column: 1/3;
+    color: blueviolet;
+    font-style: italic;
+    font-size: 10px; }
+  footer {
+    display: flex;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, auto);
+    width: 100%;
+    background: blueviolet; }
+  .imgfooter img {
+    grid-column: 1/ 3;
+    width: 100%; }
+  .imgfooter a {
+    grid-column: 1/ 3; }
+  .divpie {
+    font-size: 20px;
+    grid-column: 2/ 4; }
+  .primeraID {
+    display: flex;
+    justify-content: space-between; }
+  .galeria {
+    display: flex; }
+  .h3 {
+    display: flex;
+    justify-content: center; }
+  .column {
+    flex: 100%; } }
+
+@media screen and (min-width: 320px) and (min-width: 1200px) {
+  .column {
+    flex: 20%; } }
+
+@media screen and (min-width: 320px) {
+  .id3 {
+    grid-row: 1/5;
+    grid-column: 1/4;
+    color: blueviolet;
+    font-style: italic;
+    font-size: 40px; }
+  .menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%; }
+    .menu li {
+      align-items: center;
+      justify-content: space-around; }
+    .menu a {
+      color: #f7a4de;
+      padding: 20px; }
+    .menu:hover {
+      color: white; } }
