@@ -1,6 +1,7 @@
 * {
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body { 
@@ -53,8 +54,7 @@ a {
     height:300px;
 }
 .id3 { 
-    grid-row: 1/5;
-    grid-column: 1/4;
+    text-align: center;
     color: blueviolet;
     font-style: italic;
     font-size: 30px;
@@ -70,10 +70,12 @@ footer {
 }
 .imgfooter img {
     width: 100%;
+    margin-top: 20px;
 }
 
 .imgfooter a{ 
-    grid-column: 1/ 2;
+
+    width: 40%;
 }
 .full {
     position: fixed;
@@ -81,11 +83,24 @@ footer {
     bottom: 0px;
 }
 .divpie{
+    margin: 15px 15px 15px 15px;
+    width: 55%;
      font-size: 30px;
-   grid-column: 2/ 3;
+     grid-column: 2/ 3;
 }
-
-
+.colu {
+    margin: 15px 15px 15px 15px;
+}
+.colu1{
+    margin: 5px 5px 5px 5px;
+    width: 100px;;
+    height:100px;
+}
+.spanfot {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
 p {
     background-color: rgb(255, 144, 255);
     font-style: italic;
@@ -121,20 +136,23 @@ p {
    color: blueviolet;
 }
 }
+.primeraID{
+    display: flex;
+   margin: 20px 20px 20px 20px;
+   padding: 20px 20px 20px 20px;
+   width: 20%;
+   justify-content: flex-end;
+} 
 
+.primeraID2 {
+    height: 55px;
+    width: 55px;
+}
 
+    
 @media screen and (min-width:320px){
    
-    body{
-        font-family: 'Roboto', sans-serif;
-        font-size:16px;
-        background-color: rgb(250, 236, 218);
-        margin: 0;
-       display: grid;
-       min-height: 100vh;
-       grid-template-rows: auto 1fr auto;
-       overflow-x: hidden;
-    }
+
     
     a{
         text-decoration: none;
