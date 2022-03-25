@@ -18,19 +18,25 @@ body {
   justify-content: space-around;
   background-color: blueviolet;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-size: 20px; }
   .menu li {
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    justify-content: center; }
   .menu a {
+    display: flex;
     color: #f7a4de;
-    padding: 20px; }
-  .menu:hover {
-    color: white; }
+    border-radius: 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center; }
+    .menu a:hover {
+      border: 10px solid #f7a4de; }
 
-.header__logo {
-  width: 100px;
-  height: 100px; }
+.no {
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 .sectionbody {
   display: grid;
@@ -86,6 +92,10 @@ footer {
   width: 100px;
   height: 100px; }
 
+.colu2 {
+  width: 35px;
+  height: 35px; }
+
 .spanfot {
   color: white;
   display: flex;
@@ -102,23 +112,42 @@ p {
 
 .galeria img {
   width: 100%;
-  height: 250px; }
+  height: 250px;
+  margin: 10px 10px 10px 10px; }
   .galeria img .col-lg-4 {
     margin: 0 !important;
     padding: 25px; }
   .galeria img:hover {
     border: 10px solid blueviolet; }
 
+.galeriafooter {
+  padding-bottom: 15px; }
+
 .sectionnos {
+  display: flex;
   border-top: solid 5px blueviolet;
-  border-right: solid 10px blueviolet;
+  border-right: solid 30% blueviolet;
+  border-bottom: solid 7px blueviolet;
+  border-left: solid 30% blueviolet;
+  padding: 5px;
+  margin: 5px;
+  justify-content: center; }
+  .sectionnos .sectionnosjan {
+    padding: 5px;
+    color: blueviolet;
+    justify-content: center; }
+
+.sectionnos2 {
+  border-top: solid 5px blueviolet;
+  border-right: solid 12px blueviolet;
   border-bottom: solid 7px blueviolet;
   border-left: solid 12px blueviolet;
   padding: 5px;
   margin: 5px; }
-  .sectionnos .sectionnosjan {
+  .sectionnos2 .sectionnosjan23 {
     padding: 5px;
-    color: blueviolet; }
+    color: blueviolet;
+    justify-content: center; }
 
 .primeraID {
   display: flex;
@@ -141,7 +170,8 @@ p {
     background-color: blueviolet;
     width: 100%;
     height: 100%;
-    grid-column: 1/ 12; }
+    grid-column: 1/ 12;
+    text-align: center; }
   .menu li {
     align-items: center;
     justify-content: space-around; }
